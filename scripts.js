@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let grade ="";
     if(cgpa>9) grade = "A+";
     else if(cgpa>8) grade = "A";
-    else if(cgpa>7) grade = "B+";
-    else if(cgpa>6) grade = "B";                // grading system is contributed by The_PiyushGoel;
+    else if(cgpa>7) grade = "B+";         // grading system is contributed by The_PiyushGoel;
+    else if(cgpa>6) grade = "B";                
     else if(cgpa>5) grade = "C";
     else if(cgpa>4) grade = "D";
     else grade = "F";
