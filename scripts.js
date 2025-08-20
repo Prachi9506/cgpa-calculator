@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   
     const cgpa = totalPoints / totalCredits;
-    document.getElementById("result").innerText = `Your CGPA is ${cgpa.toFixed(2)}`;
+    let grade ="";
+    if(cgpa>9) grade = "A+";
+    else if(cgpa>8) grade = "A";
+    else if(cgpa>7) grade = "B+";
+    else if(cgpa>6) grade = "B";
+    else if(cgpa>5) grade = "C";
+    else if(cgpa>4) grade = "D";
+    else grade = "F";
+    document.getElementById("result").innerText = `Your CGPA is ${cgpa.toFixed(2)} & Grade is ${grade}`;
   }
   
